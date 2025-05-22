@@ -1,0 +1,50 @@
+ssh-keygen -t ed25519
+pwd
+ls -lha
+cd .ssh/
+ls -la
+cat id_ed25519.pub
+cd ..
+cd repogit/
+git clone git@github.com:juanigarrido1108/TP_AySO.git
+cd TP_AySO/
+pwd
+ls -l
+cat /etc/os-release
+man grep
+grep HOME_URL /etc/os-release
+grep home_url /etc/os-release
+grep <parámetro> Home_url /etc/os-release
+grep -i Home_url /etc/os-release
+whoami
+echo “Usuario=$(whoami)” > datos_usuario.txt
+git add .
+git config --global user.email "juanigarrido1999@gmail.com"
+git config --global user.name "juanigarrido1108"
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt" 
+git status
+git push
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuarios.txt
+git add .
+git commit -m “feat: Añadiendo información de CPU”
+cat datos_usuario
+cat datos_usuario.txt
+cat datos_usuarios.txt
+sudo rm datos_usuarios.txt
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt
+git add .
+git commit -m “feat: Añadiendo información de CPU”
+git add datos_usuario.txt 
+git commit -m “feat: Añadiendo información de CPU”
+ls -la
+git commit -m "feat: Añadiendo información de CPU"
+cat << EOF >> README.md 
+Alumno: Juan Ignacio Garrido
+División: 314
+Turno: Noche
+EOF
+
+git add README.md datos_usuario.txt 
+git commit -m "ADD: Añadiendo Readme y datos de usuario"
+git push
+history -a
